@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Media in html </h1><!--CTG_1-->
+
+    <h2>Image</h2><!--CTG_2-->
+    <img src="images\cap-town.jpg" alt="image description" width="600" height="400" srcset="images\cap-town.jpg 300w, images\cap-town.jpg 600w, images\cap-town.jpg 1200w" sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px" crossorigin="anonymous" loading="lazy"usemap="#imagemap" ismap decoding="async" /><br><!--CTG_3-->
+
+
+    <h2>Video</h2><!--CTG_30-->
+    <video src="Videos\cap-town-landscape.mp4" controls autoplay loop muted preload="auto" poster="images\cap-town.jpg" width="800"
+        height="450" crossorigin="anonymous" playsinline><!--CTG_31-->
+        Your browser does not support the video tag.<!--CTG_32-->
+    </video><br><!--CTG_33-->
+
+    <h2>Audio</h2><!--CTG_52-->
+    <audio src="Audios\cap-town-sound.mp3" controls autoplay loop muted preload="auto" crossorigin="anonymous"><!--CTG_53-->
+        Your browser does not support the audio element.<!--CTG_54-->
+    </audio><!--CTG_55-->
+
+    <h2>document</h2>
+    <object data="documents\Lonely Planet Sweden.pdf" type="application/pdf" width="600" height="400">
+        <p>Il semble que votre navigateur ne puisse pas afficher le fichier PDF. Vous pouvez le télécharger <a
+                href="documents\Lonely Planet Sweden.pdf">ici</a>.</p>
+    </object>
+
+    <!-- <embed src="documents\Lonely Planet Sweden.pdf" type="application/pdf" width="600" height="400"> --><!--CTG_74-->
+
+    <h2>Iframe</h2><!--CTG_75-->
+    <iframe src="https://en.m.wikipedia.org/wiki/Hypertext_Markup_Language" width="600" height="400"></iframe><!--CTG_76-->
+    <h3>youtube video exemple</h3><!--CTG_77-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HWLErwiuI9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><!--CTG_78-->
+    
+</iframe><!--CTG_79-->
+
+<object data="images\packing.jpg" type="image/jpg" width="600" height="400" controls>
+    <p>Your browser does not support the audio element.</a></p></object>
+
+
+</body>
+
+</html>

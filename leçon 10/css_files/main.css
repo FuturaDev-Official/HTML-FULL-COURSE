@@ -1,0 +1,48 @@
+
+html {
+    font-size: 20px;
+}
+
+table, tr, th, td, caption {
+    border: 3px solid #545151;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="radio"],
+input[type="checkbox"],
+select,textarea,
+button {
+    padding: 10px;         /* Augmente la taille interne */
+    font-size: 26px;       /* Augmente la taille de la police */
+    margin: 5px 0;         /* Ajoute un espace autour des éléments */
+    border-radius: 5px;    /* Adoucit les coins */
+    border: 1px solid #ccc;/* Ajoute une bordure légère */
+}
+
+fieldset {
+    margin-bottom: 20px;   /* Ajoute de l'espace entre les groupes de champs */
+}
+
+legend {
+    font-size: 23px;       /* Augmente la taille de la police des légendes */
+    font-weight: bold;     /* Rend la police des légendes en gras */
+}
+
+
+
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}

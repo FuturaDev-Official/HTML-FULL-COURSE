@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Jens Watson">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overview of travel expenses categorized by destination and type.">
+    <meta name="keywords" content="travel, expenses, budget, overview, destinations">
+
+    <!-- Open Graph Meta Tags -->
+
+    <meta property="og:title" content="Travel Explorer - Travel Expenses Overview">
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/FuturaDev-Official/HTML_FULL_COURSE-FuturaDev/main/Data/Images/thumbnail_expenses.jpg">
+    <meta property="og:url" content="https://www.travelexplorer.com/expenses.html">
+    <meta property="og:description"
+        content="Explore detailed travel expenses categorized by destinations. Get insights on accommodation, transportation, and activity costs.">
+    <meta property="og:site_name" content="Travel Explorer" />
+
+    <!--end-->
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Travel Explorer - Travel Expenses Overview</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Travel Expenses Overview</h1>
+
+        <!-- Navigation Section -->
+        <nav aria-label="Main menue">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="travel-tips.html">Travel Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="expenses.html">Expenses Overview</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Comprehensive Travel Expenses</h2>
+            <p>This table provides a detailed breakdown of travel expenses for various destinations, covering different
+                types of costs such as accommodation, transportation, and activities.</p>
+
+            <!-- Travel Expenses Table -->
+            <table border="1" style="border-collapse: collapse;">
+                <!-- Table Header -->
+                <thead>
+                    <tr>
+                        <th rowspan="2">Destination</th>
+                        <th colspan="3">Accommodation</th>
+                        <th rowspan="2">Transportation</th>
+                        <th colspan="2">Activities</th>
+                        <th rowspan="2">Total Cost</th>
+                    </tr>
+                    <tr>
+                        <th>Hotel</th>
+                        <th>Hostel</th>
+                        <th>Airbnb</th>
+                        <th>Excursions</th>
+                        <th>Meals</th>
+                    </tr>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Paris, France</td>
+                        <td>$1200</td>
+                        <td>$800</td>
+                        <td>$1000</td>
+                        <td rowspan="2">$600</td>
+                        <td>$400</td>
+                        <td>$500</td>
+                        <td rowspan="2">$3700</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Special Offer: $950</td>
+                        <td>$950</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Kyoto, Japan</td>
+                        <td>$900</td>
+                        <td>$600</td>
+                        <td>$800</td>
+                        <td>$400</td>
+                        <td>$300</td>
+                        <td>$500</td>
+                        <td>$3500</td>
+                    </tr>
+                    <tr>
+                        <td>Cape Town, South Africa</td>
+                        <td>$700</td>
+                        <td>$400</td>
+                        <td>$600</td>
+                        <td>$300</td>
+                        <td colspan="2">$800 (including meals and excursions)</td>
+                        <td>$2800</td>
+                    </tr>
+
+                </tbody>
+
+                <!-- Table Footer -->
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Average Cost per Destination</th>
+                        <td colspan="3">$3333</td>
+                    </tr>
+                </tfoot>
+
+
+
+            </table>
+
+    <hr>
+            <br>
+    <table border="8" 
+       cellpadding="5" 
+       cellspacing="2" 
+       width="300" 
+       height="200" 
+       summary="Table showing fruits and their prices" 
+       align="center" 
+       bgcolor="#f9f9f9" 
+       style="border-collapse: collapse; font-family: Arial, sans-serif;">
+    <caption>Fruit Prices</caption>
+    <thead>
+        <tr align="center" valign="top" bgcolor="#e0e0e0">
+            <th scope="col" abbr="Fruit name">Fruit</th>
+            <th scope="col" abbr="Price in USD">Price</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <th scope="row" headers="Fruit Price">Apple</th>
+            <td headers="Price" data-price="1.00">$1.00</td>
+        </tr>
+        <tr>
+            <th scope="row" headers="Fruit Price">Banana</th>
+            <td headers="Price" data-price="0.50">$0.50</td>
+        </tr>
+        <tr>
+            <th scope="row" headers="Fruit Price">Cherry</th>
+            <td headers="Price" data-price="2.00">$2.00</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="1" scope="rowgroup" abbr="Total number of fruits">Total Fruits</th>
+            <td headers="Total" data-total="3">3</td>
+        </tr>
+    </tfoot>
+</table>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <hr>
+        <addresse>
+            <p>Contact us at <a href="mailto:info@travelexplorer.com">info@travelexplorer.com</a></p>
+            <addresse />
+
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+            <p><a href="https://www.travelexplorer.com/privacy-policy" target="_blank"
+                    title="Read our privacy policy">Privacy
+                    Policy</a></p>
+
+    </footer>
+
+</body>
+
+</html>

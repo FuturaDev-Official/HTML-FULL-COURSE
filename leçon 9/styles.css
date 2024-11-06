@@ -1,0 +1,89 @@
+/* Basic style for the body */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add padding */
+    background-color: #f4f4f4; /* Background color */
+}
+
+/* Header styles */
+header {
+    background: #b7ec53; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 0; /* Padding */
+    text-align: center; /* Center text */
+}
+
+/* Header styles for h1, h2, h3 */
+h1, h2, h3 {
+    color: #f186e6; /* Text color */
+}
+
+/* Styles for paragraphs */
+p {
+    margin: 15px 0; /* Vertical margin */
+    color: #666; /* Text color */
+}
+
+/* Navigation styles */
+nav {
+    background: #506b7b; /* Background color */
+    padding: 15px; /* Padding */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Margin between items */
+}
+
+nav a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Table width */
+    border-collapse: collapse; /* Remove space between cells */
+    margin: 20px 0; /* Vertical margin */
+}
+
+th, td {
+    padding: 15px; /* Cell padding */
+    text-align: left; /* Text alignment */
+    border: 1px solid #dddddd; /* Cell border */
+}
+
+th {
+    background-color: #35424a; /* Header background color */
+    color: #ffffff; /* Header text color */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Background color for even rows */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding */
+    background-color: #35424a; /* Background color */
+    color: #ffffff; /* Text color */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Align footer to bottom */
+    width: 100%; /* Full width */
+}
+
+
+

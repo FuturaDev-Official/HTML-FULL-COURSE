@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Jens Watson">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Travel Explorer for inquiries, feedback, or travel stories.">
+    <meta name="keywords" content="contact, travel, explorer, feedback, inquiries">
+
+    <!-- Open Graph Meta Tags -->
+
+    <meta property="og:title" content="Travel Explorer - Contact Us">
+    <meta property="og:type" content="website" />
+    <meta property="og:url"
+        content="https://raw.githubusercontent.com/FuturaDev-Official/HTML_FULL_COURSE-FuturaDev/main/Data/Images/thumbnail_contact.jpg">
+
+    <meta property="og:url" content="https://www.travelexplorer.com/contact.html">
+    <meta property="og:description"
+        content="We'd love to hear from you! Reach out for questions, feedback, or to share your travel experiences.">
+    <meta property="og:site_name" content="Travel Explorer" />
+
+    <!--end-->
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Travel Explorer - Contact Us</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Travel Explorer</h1>
+
+        <!-- Navigation Section -->
+        <nav aria-label="Main menue">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="travel-tips.html">Travel Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="expenses.html">Expenses Overview</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+    </header>
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>We'd Love to Hear From You!</h2>
+            <p>If you have any questions, feedback, or just want to share your travel stories, feel free to reach out to
+                us.</p>
+            <!-- Contact Form Section -->
+            <section>
+                <h2>Contact Us Form</h2>
+                <p>Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+                <!-- Contact Form -->
+                <form action="/submit_contact" method="post">
+                    <!-- Personal Information Fieldset -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <!-- Name Field -->
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                            autofocus><br><br>
+
+                        <!-- Email Field -->
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address"
+                            required><br><br>
+
+                        <!-- Phone Number Field -->
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890"><br><br>
+
+                        <!-- Date of Birth Field -->
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required><br><br>
+
+                        <!-- Gender Field -->
+                        <label>Gender:</label><br>
+                        <input type="radio" id="gender_male" name="gender" value="male">
+                        <label for="gender_male">Male</label><br>
+                        <input type="radio" id="gender_female" name="gender" value="female">
+                        <label for="gender_female">Female</label><br>
+                        <input type="radio" id="gender_other" name="gender" value="other">
+                        <label for="gender_other">Other</label><br><br>
+                    </fieldset>
+
+                    <!-- Message Fieldset -->
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <!-- Subject Field -->
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter the subject of your message"
+                            required><br><br>
+
+                        <!-- Message Field -->
+                        <label for="message">Your Message:</label><br>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                            required></textarea><br><br>
+                    </fieldset>
+
+                    <!-- Contact Preference Fieldset -->
+                    <fieldset>
+                        <legend>Contact Preference</legend>
+                        <!-- Preferred Contact Method -->
+                        <label>Preferred Contact Method:</label><br>
+                        <input type="radio" id="contact_email" name="contact_method" value="email" checked>
+                        <label for="contact_email">Email</label><br>
+                        <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                        <label for="contact_phone">Phone</label><br><br>
+
+                        <!-- Newsletter Subscription -->
+                        <label for="subscribe">Subscribe to our newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+                    </fieldset>
+                    <!-- Reason for Contact Fieldset -->
+                    <fieldset>
+                        <legend>Reason for Contact</legend>
+                        <!-- Reason for Contact (Dropdown with Optgroup) -->
+                        <label for="reason">Reason for Contact:</label>
+                        <select id="reason" name="reason">
+                            <optgroup label="General Inquiries">
+                                <option value="general_question">General Question</option>
+                                <option value="feedback">Feedback</option>
+                            </optgroup>
+                            <optgroup label="Support">
+                                <option value="technical_support">Technical Support</option>
+                                <option value="billing_support">Billing Support</option>
+                            </optgroup>
+                            <optgroup label="Partnerships">
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="media">Media Inquiry</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+
+                        <!--<option value="feedback" selected>Feedback</option>-->
+                        <!-- Country Field with Datalist -->
+                        <label for="country">Country:</label>
+                        <input list="countries" id="country" name="country" placeholder="Select or type your country"
+                            required>
+                        <datalist id="countries">
+                            <option value="United States">
+                            <option value="Canada">
+                            <option value="Australia">
+                            <option value="United Kingdom">
+                            <option value="Germany">
+                        </datalist>
+                        <br><br>
+
+                        <!-- Upload File Field -->
+                        <label for="attachment">Attach a file (optional):</label><br>
+                        <input type="file" accept=".jpg,.png,.pdf" id="attachment" name="attachment">
+                        <br><br>
+                    </fieldset>
+
+                    <!-- Feedback Type Fieldset -->
+                    <fieldset>
+                        <legend>Feedback Type</legend>
+                        <!-- Feedback Type (Dropdown) -->
+                        <label for="feedback_type">Type of Feedback:</label>
+                        <select id="feedback_type" name="feedback_type">
+                            <option value="compliment">Compliment</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="issue">Issue</option>
+                        </select>
+                        <br><br>
+
+                        <!-- Rating Field -->
+                        <label for="rating">Rate Your Experience:</label>
+                        <select id="rating" name="rating">
+                            <option value="1">1 Star</option>
+                            <option value="2">2 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="5">5 Stars</option>
+                        </select>
+                        <br><br>
+                    </fieldset>
+                    <!-- Submit and Reset Button  -->
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+
+
+
+
+
+
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <hr>
+    <!-- Footer Section -->
+    <footer>
+
+        <addresse>
+            <p>Contact us at <a href="mailto:info@travelexplorer.com">info@travelexplorer.com</a></p>
+            <addresse />
+
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+            <p><a href="https://www.travelexplorer.com/privacy-policy" target="_blank"
+                    title="Read our privacy policy">Privacy
+                    Policy</a></p>
+
+    </footer>
+
+</body>
+
+</html>
